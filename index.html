@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+
+    <style>
+
+div{
+    margin: auto;
+    width: 340px;
+}
+
+.btn3{
+margin: auto;
+margin-top: 20px;
+}
+
+.btn1{
+    padding: 20px;
+    margin-left: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+ 
+}
+
+
+.btn2{
+    padding: 20px;
+    margin-left: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+ 
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="off.jpg" alt="" id="img1">
+    </div>
+
+
+    <div class="btn3">
+    <button class="btn1" onclick="bulbon()">Turn on Light</button>
+    <button class="btn2" onclick="bulboff()">Turn off Light</button>
+</div>
+
+<script>
+    function bulbon() {
+        document.getElementById('img1').src='on.jpg'; 
+    }
+
+    function bulboff() {
+        document.getElementById('img1').src='off.jpg'
+    }
+</script>
+
+</body>
+
+</html>
